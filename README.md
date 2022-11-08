@@ -10,6 +10,10 @@ To run this app you need have the following Libary
   pip install flask
 
 ```
+```bash
+  pip install flask_sqlalchemy 
+
+```
     
 ## Run Locally
 
