@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+	{% block head %} {% endblock %}
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<br><br>
+
+	<div class="row">
+
+			<div class="col-lg-1 mb-4"></div>
+
+            <div class="col-lg-4 mb-4">
+
+<img src="{{ url_for('static', filename='img/photo.png') }}" class="img-fluid">
+
+			</div>
+
+			<div class="col-lg-6 mb-4">
+
+	{% block body %} {% endblock %}
+
+			</div>
+			<div class="col-lg-1 mb-4"></div>
+
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="col-lg-1 mb-4"></div>
+
+		<div class="col-lg-5 mb-4">
+
+		<p>Welcome to CRUD App!</p> 
+		<p>CRUD App is a new app by <a href="https://www.linkedin.com/in/biltudey/">Biltu Dey</a> which allows you to remember where you put your things.</p>
+		<p>All you have to do is visit this App every time you put anything anywhere, and add (or update/delete) the details of the thing that you will later wish to find.</p>
+		<p>Truly, the optimal solution!</p>
+
+		</div>
+
+		<div class="col-lg-6 mb-4"></div>
+
+	</div>
+
+</div>
+
+
+	    <!-- Footer -->
+    <footer class="py-5 bg-dark">  
+      <div class="container">
+        <p class="m-0 text-center text-white">&copy; <a href="hhttps://linkedin.com/in/mrbriit">Biltu Dey</a> 2022</p>
+        <!--Twitter-->
+        <div align="center">
+        <p style="color:#007bff">
+          <!--GitHub-->
+          <a href="https://github.com/biltudey" target="_blank" class="fa fa-github"></a> |
+          <!--Medium-->
+          <a href="https://twitter.com/CallmeBiltu" target="_blank" class="fa fa-twitter"></a> |
+          <!--LinkedIn-->
+          <a href="https://www.linkedin.com/in/biltudey/" target="_blank" class="fa fa-linkedin"></a>
+        </p>
+      </div>
+      </div>
+
+    </footer>
+
+</body>
+</html>

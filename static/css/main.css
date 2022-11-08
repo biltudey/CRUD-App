@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	font-family: 'Syne', sans-serif;
+	background-color: #626dea ;
+
+}
+
+table {
+  border: 5px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+
+}
+
+td{
+  border: 2px solid #f01088;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  font-weight: lighter;
+
+}
+
+th {
+  border: 2px solid #f01088;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centred {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.bg-dark {
+    background-color: #d68119 !important;
+}
+a{
+   color: aqua;
+}

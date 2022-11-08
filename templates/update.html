@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>CRUD App</title>
+{% endblock %}
+
+
+{% block body %} 
+
+<div class="content">
+	<h1>UPDATE CRUD App</h1>
+
+	<form action='/update/{{task.id}}', method='POST'>
+		<input type="text" name="thing" id='thing', value='{{task.thing}}'>
+		<input type="text" name="location" id='location', value='{{task.location}}'>
+		<input type="submit" value="Update">
+		
+
+	</form>
+
+
+</div>
+
+{% endblock %}
